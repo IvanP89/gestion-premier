@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost/dbgpremier</property>
+        <property name="connection.username">gpremier</property>
+        <property name="connection.password">123456789</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL95Dialect</property>
+
+        <mapping class="org.gestionpremier.negocio.entidades.Pasajero" />
+        <mapping class="org.gestionpremier.negocio.entidades.Direccion" />
+        <mapping class="org.gestionpremier.negocio.entidades.Localidad" />
+        <mapping class="org.gestionpremier.negocio.entidades.Provincia" />
+        <mapping class="org.gestionpremier.negocio.entidades.Pais" />
+        <mapping class="org.gestionpremier.negocio.entidades.Consumo" />
+        <mapping class="org.gestionpremier.negocio.entidades.Estadia" />
+        <mapping class="org.gestionpremier.negocio.entidades.Factura" />
+        <mapping class="org.gestionpremier.negocio.entidades.RenglonFactura" />
+        <mapping class="org.gestionpremier.negocio.entidades.Habitacion" />
+        <mapping class="org.gestionpremier.negocio.entidades.Reserva" />
+        <mapping class="org.gestionpremier.negocio.entidades.ResponsableDePago" />
+        <mapping class="org.gestionpremier.negocio.entidades.TitularReserva" />
+        <mapping class="org.gestionpremier.negocio.entidades.Banco" />
+        <mapping class="org.gestionpremier.negocio.entidades.NotaDeCredito" />
+        <mapping class="org.gestionpremier.negocio.entidades.Moneda" />
+        <mapping class="org.gestionpremier.negocio.entidades.MedioDePago" />
+        <mapping class="org.gestionpremier.negocio.entidades.Cheque" />
+        <mapping class="org.gestionpremier.negocio.entidades.Efectivo" />
+        <mapping class="org.gestionpremier.negocio.entidades.TarjetaDeDebito" />
+        <mapping class="org.gestionpremier.negocio.entidades.TarjetaDeCredito" />
+        <mapping class="org.gestionpremier.negocio.entidades.Pago" />
+        <mapping class="org.gestionpremier.negocio.entidades.Usuario" />
+        <mapping class="org.gestionpremier.negocio.entidades.UsuarioAdmin" />
+        <mapping class="org.gestionpremier.negocio.entidades.Sesion" />
+
+    </session-factory>
+</hibernate-configuration>
